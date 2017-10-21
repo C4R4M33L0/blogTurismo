@@ -1,0 +1,78 @@
+body {
+    background: url(../img/fondo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.logo {
+    width: 150px;
+    position: absolute;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.slogan {
+    text-align: center;
+    color: white;    
+    font-family: bold;
+}
+
+.card {
+   opacity: 0.9; 
+}
+
+.imgg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.chip {
+    margin-bottom: 5px;
+}
+
+.autor {
+    width: 100px;
+    height: 100px !important;
+    border: 3px solid white;
+}
+
+/* Desktop */
+
+@media all and (min-width: 1001px) {
+    .logo {
+        transform: translate3d(0px, 20px, 15px);
+    }
+
+    nav {
+        margin-bottom: 50px;
+    }
+}
+
+
+/* Tablet */
+
+@media all and (min-width: 501px) and (max-width: 1000px) {
+    .logo {
+        transform: translate3d(-80px, 80px, 15px);
+    }
+    nav {
+        margin-bottom: 130px;
+    }
+    .img_p {
+        width: 300px;
+    }
+}
+
+
+/* Dispositivos moviles */
+
+@media all and (max-width: 500px) {
+    .logo {
+        transform: translate3d(-80px, 70px, 15px);
+    }
+    nav {
+        margin-bottom: 130px;
+    }
+}
